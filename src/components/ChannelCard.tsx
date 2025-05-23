@@ -61,12 +61,20 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
   return (
     <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden">
       {/* Image Background */}
-      <div className="h-48 relative overflow-hidden">
+      <div className="h-48 relative overflow-hidden bg-gray-200">
         {channel.image ? (
           <img 
             src={channel.image} 
             alt={channel.name}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            onError={(e) => {
+              console.log('Image failed to load:', channel.image);
+              e.currentTarget.style.display = 'none';
+              e.currentTarget.parentElement!.style.background = `linear-gradient(to right, ${channel.bgGradient.replace('from-', '').replace('to-', '').split(' ').join(', ')})`;
+            }}
+            onLoad={() => {
+              console.log('Image loaded successfully:', channel.image);
+            }}
           />
         ) : (
           <div className={`h-full bg-gradient-to-r ${platform === 'instagram' ? getPlatformColor() : channel.bgGradient}`}></div>
