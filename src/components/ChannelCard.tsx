@@ -9,6 +9,7 @@ interface Channel {
   bgGradient: string;
   icon: string;
   platform?: string;
+  image?: string;
 }
 
 interface ChannelCardProps {
@@ -52,9 +53,18 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
 
   return (
     <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden">
-      {/* Gradient Background */}
-      <div className={`h-32 bg-gradient-to-r ${platform === 'instagram' ? getPlatformColor() : channel.bgGradient} relative`}>
-        <div className="absolute inset-0 bg-black/10"></div>
+      {/* Image Background */}
+      <div className="h-48 relative overflow-hidden">
+        {channel.image ? (
+          <img 
+            src={channel.image} 
+            alt={channel.name}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+        ) : (
+          <div className={`h-full bg-gradient-to-r ${platform === 'instagram' ? getPlatformColor() : channel.bgGradient}`}></div>
+        )}
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute top-4 left-4 flex items-center space-x-2">
           {getPlatformIcon()}
           <span className="text-white font-semibold capitalize">{platform}</span>

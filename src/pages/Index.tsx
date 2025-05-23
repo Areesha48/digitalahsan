@@ -1,6 +1,6 @@
+
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
-import { Hero } from "@/components/Hero";
 
 const Index = () => {
   const whatsappChannels = [
@@ -10,7 +10,8 @@ const Index = () => {
       description: "Latest technology news and updates",
       memberCount: "2.5K",
       bgGradient: "from-green-400 to-green-600",
-      icon: "📱"
+      icon: "📱",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop"
     },
     {
       id: 2,
@@ -18,7 +19,8 @@ const Index = () => {
       description: "Inspiring quotes and motivational content",
       memberCount: "1.8K",
       bgGradient: "from-blue-400 to-blue-600",
-      icon: "💪"
+      icon: "💪",
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop"
     },
     {
       id: 3,
@@ -26,7 +28,8 @@ const Index = () => {
       description: "Breaking news and current affairs",
       memberCount: "3.2K",
       bgGradient: "from-purple-400 to-purple-600",
-      icon: "📰"
+      icon: "📰",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
     },
     {
       id: 4,
@@ -34,7 +37,8 @@ const Index = () => {
       description: "Movies, music and entertainment content",
       memberCount: "4.1K",
       bgGradient: "from-pink-400 to-pink-600",
-      icon: "🎬"
+      icon: "🎬",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
     },
     {
       id: 5,
@@ -42,7 +46,8 @@ const Index = () => {
       description: "Educational resources and study guides",
       memberCount: "2.9K",
       bgGradient: "from-orange-400 to-orange-600",
-      icon: "📚"
+      icon: "📚",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop"
     },
     {
       id: 6,
@@ -50,7 +55,8 @@ const Index = () => {
       description: "Latest sports news and updates",
       memberCount: "1.5K",
       bgGradient: "from-red-400 to-red-600",
-      icon: "⚽"
+      icon: "⚽",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop"
     }
   ];
 
@@ -62,7 +68,8 @@ const Index = () => {
       memberCount: "5.2K",
       bgGradient: "from-gradient-start to-gradient-end",
       icon: "📸",
-      platform: "instagram"
+      platform: "instagram",
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop"
     },
     {
       id: 'telegram',
@@ -71,13 +78,13 @@ const Index = () => {
       memberCount: "3.8K",
       bgGradient: "from-blue-500 to-cyan-500",
       icon: "✈️",
-      platform: "telegram"
+      platform: "telegram",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      <Hero />
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-8">
       
       {/* WhatsApp Channels Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
