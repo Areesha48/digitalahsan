@@ -1,4 +1,3 @@
-
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -6,12 +5,13 @@ const Index = () => {
   const whatsappChannels = [
     {
       id: 1,
-      name: "Tech Updates",
-      description: "Latest technology news and updates",
+      name: "Digital Ahsan",
+      description: "Grow like a villain - Digital marketing tips and strategies",
       memberCount: "2.5K",
       bgGradient: "from-green-400 to-green-600",
       icon: "📱",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop"
+      image: "/lovable-uploads/c3091ba1-107a-4f0a-9769-0a308e25ed54.png",
+      link: "https://www.whatsapp.com/channel/0029VaderbPEAKWB4EtCKK2G"
     },
     {
       id: 2,

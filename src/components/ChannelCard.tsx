@@ -10,6 +10,7 @@ interface Channel {
   icon: string;
   platform?: string;
   image?: string;
+  link?: string;
 }
 
 interface ChannelCardProps {
@@ -51,6 +52,12 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
     }
   };
 
+  const handleJoinClick = () => {
+    if (channel.link) {
+      window.open(channel.link, '_blank');
+    }
+  };
+
   return (
     <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden">
       {/* Image Background */}
@@ -89,7 +96,10 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
             <span className="text-sm text-gray-500">{channel.memberCount} members</span>
           </div>
           
-          <button className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}>
+          <button 
+            onClick={handleJoinClick}
+            className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
+          >
             {getJoinText()}
           </button>
         </div>
