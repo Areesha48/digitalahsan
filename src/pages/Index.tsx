@@ -1,4 +1,3 @@
-
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -31,7 +30,8 @@ const Index = () => {
       memberCount: "1.8K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💪",
-      image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png"
+      image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png",
+      link: "https://www.whatsapp.com/channel/0029Vb8p4E2B4hdaN5aPCs2B"
     },
     {
       id: 4,
