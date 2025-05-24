@@ -1,3 +1,4 @@
+
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -40,25 +41,25 @@ const Index = () => {
       bgGradient: "from-purple-400 to-purple-600",
       icon: "🕯️",
       image: "/lovable-uploads/0107b260-2912-44ad-99d2-7715a67ceec5.png"
-    },
-    {
-      id: 5,
-      name: "Entertainment Hub",
-      description: "Movies, music and entertainment content",
-      memberCount: "4.1K",
-      bgGradient: "from-pink-400 to-pink-600",
-      icon: "🎬",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
-    },
-    {
-      id: 6,
-      name: "Study Material",
-      description: "Educational resources and study guides",
-      memberCount: "2.9K",
-      bgGradient: "from-orange-400 to-orange-600",
-      icon: "📚",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop"
     }
+    // {
+    //   id: 5,
+    //   name: "Entertainment Hub",
+    //   description: "Movies, music and entertainment content",
+    //   memberCount: "4.1K",
+    //   bgGradient: "from-pink-400 to-pink-600",
+    //   icon: "🎬",
+    //   image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
+    // },
+    // {
+    //   id: 6,
+    //   name: "Study Material",
+    //   description: "Educational resources and study guides",
+    //   memberCount: "2.9K",
+    //   bgGradient: "from-orange-400 to-orange-600",
+    //   icon: "📚",
+    //   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop"
+    // }
   ];
 
   const socialChannels = [
@@ -70,7 +71,7 @@ const Index = () => {
       bgGradient: "from-gradient-start to-gradient-end",
       icon: "📸",
       platform: "instagram",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop"
+      image: "/lovable-uploads/858b3330-32f1-4507-bf06-ce449099247a.png"
     },
     {
       id: 'telegram',
@@ -80,7 +81,7 @@ const Index = () => {
       bgGradient: "from-blue-500 to-cyan-500",
       icon: "✈️",
       platform: "telegram",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
+      image: "/lovable-uploads/85040803-74c4-4227-acde-a6179f8f722c.png"
     }
   ];
 
