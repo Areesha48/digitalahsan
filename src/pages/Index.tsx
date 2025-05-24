@@ -7,7 +7,7 @@ const Index = () => {
       id: 1,
       name: "Digital Ahsan",
       description: "Grow like a villain - Digital marketing tips and strategies",
-      memberCount: "2.5K",
+      memberCount: "7.9K",
       bgGradient: "from-green-400 to-green-600",
       icon: "📱",
       image: "/lovable-uploads/c3091ba1-107a-4f0a-9769-0a308e25ed54.png",
@@ -15,6 +15,15 @@ const Index = () => {
     },
     {
       id: 2,
+      name: "Tech Ahsan",
+      description: "Latest technology updates and tech reviews",
+      memberCount: "1K",
+      bgGradient: "from-blue-400 to-blue-600",
+      icon: "💻",
+      link: "https://www.whatsapp.com/channel/0029VasKqNm3LdQQie4R6X1L"
+    },
+    {
+      id: 3,
       name: "Daily Motivation",
       description: "Inspiring quotes and motivational content",
       memberCount: "1.8K",
@@ -23,7 +32,7 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop"
     },
     {
-      id: 3,
+      id: 4,
       name: "News & Updates",
       description: "Breaking news and current affairs",
       memberCount: "3.2K",
@@ -32,7 +41,7 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
     },
     {
-      id: 4,
+      id: 5,
       name: "Entertainment Hub",
       description: "Movies, music and entertainment content",
       memberCount: "4.1K",
@@ -41,22 +50,13 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
     },
     {
-      id: 5,
+      id: 6,
       name: "Study Material",
       description: "Educational resources and study guides",
       memberCount: "2.9K",
       bgGradient: "from-orange-400 to-orange-600",
       icon: "📚",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop"
-    },
-    {
-      id: 6,
-      name: "Sports Corner",
-      description: "Latest sports news and updates",
-      memberCount: "1.5K",
-      bgGradient: "from-red-400 to-red-600",
-      icon: "⚽",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop"
     }
   ];
 
