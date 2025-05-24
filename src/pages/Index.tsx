@@ -20,25 +20,26 @@ const Index = () => {
       memberCount: "1K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💻",
+      image: "/lovable-uploads/82303465-daf7-45f8-bbe4-860489700552.png",
       link: "https://www.whatsapp.com/channel/0029VasKqNm3LdQQie4R6X1L"
     },
     {
       id: 3,
-      name: "Daily Motivation",
-      description: "Inspiring quotes and motivational content",
+      name: "YEET",
+      description: "Focus your dream - Make yourself Proud!",
       memberCount: "1.8K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💪",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop"
+      image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png"
     },
     {
       id: 4,
-      name: "News & Updates",
-      description: "Breaking news and current affairs",
+      name: "Spiritual vibes",
+      description: "Spiritual content and peaceful vibes",
       memberCount: "3.2K",
       bgGradient: "from-purple-400 to-purple-600",
-      icon: "📰",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
+      icon: "🕯️",
+      image: "/lovable-uploads/0107b260-2912-44ad-99d2-7715a67ceec5.png"
     },
     {
       id: 5,
