@@ -1,9 +1,18 @@
-
 import { Instagram, MessageCircle, Heart } from "lucide-react";
 
 export const Footer = () => {
   const handleInstagramClick = () => {
     window.open('https://www.instagram.com/ahsan_dga?igsh=MTM4aTA1MHcxcThiZQ%3D%3D', '_blank');
+  };
+
+  // Telegram link
+  const handleTelegramClick = () => {
+    window.open('https://t.me/+Ap1B_9uIxDY4YWZk', '_blank');
+  };
+
+  // WhatsApp link (aap apna WhatsApp channel ka link yahan daal dein)
+  const handleWhatsAppClick = () => {
+    window.open('https://www.whatsapp.com/channel/0029VaderbPEAKWB4EtCKK2G', '_blank');
   };
 
   return (
@@ -29,10 +38,16 @@ export const Footer = () => {
               >
                 <Instagram className="w-5 h-5" />
               </button>
-              <button className="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
+              <button
+                onClick={handleTelegramClick}
+                className="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200"
+              >
                 <MessageCircle className="w-5 h-5" />
               </button>
-              <button className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
+              <button
+                onClick={handleWhatsAppClick}
+                className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200"
+              >
                 <MessageCircle className="w-5 h-5" />
               </button>
             </div>
