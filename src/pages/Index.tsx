@@ -70,7 +70,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-8">
-      
+
       {/* WhatsApp Channels Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -81,11 +81,11 @@ const Index = () => {
             Join our exclusive WhatsApp channels for latest updates and content
           </p>
         </div>
-        
-        {/* First row - 3 cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-          {whatsappChannels.slice(0, 3).map((channel, index) => (
-            <div 
+
+        {/* 2x2 Grid for WhatsApp Channels */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto justify-center">
+          {whatsappChannels.map((channel, index) => (
+            <div
               key={channel.id}
               className="animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
@@ -94,18 +94,6 @@ const Index = () => {
             </div>
           ))}
         </div>
-        
-        {/* Second row - 1 card centered */}
-        {whatsappChannels.length > 3 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 max-w-md mx-auto">
-            <div 
-              className="animate-fade-in"
-              style={{ animationDelay: `300ms` }}
-            >
-              <ChannelCard channel={whatsappChannels[3]} platform="whatsapp" />
-            </div>
-          </div>
-        )}
       </section>
 
       {/* Social Media Section */}
@@ -118,10 +106,10 @@ const Index = () => {
             Stay connected with us on social media platforms
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {socialChannels.map((channel, index) => (
-            <div 
+            <div
               key={channel.id}
               className="animate-fade-in"
               style={{ animationDelay: `${index * 200}ms` }}
