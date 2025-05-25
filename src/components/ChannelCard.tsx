@@ -1,4 +1,3 @@
-
 import { Instagram, MessageCircle } from "lucide-react";
 
 interface Channel {
@@ -97,13 +96,7 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
         <p className="text-gray-600 mb-4 text-sm">
           {channel.description}
         </p>
-        
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-sm text-gray-500">{channel.memberCount} members</span>
-          </div>
-          
+        <div className="flex items-center justify-end">
           <button 
             onClick={handleJoinClick}
             className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
