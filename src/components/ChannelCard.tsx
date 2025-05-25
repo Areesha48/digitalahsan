@@ -58,7 +58,7 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
   };
 
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden h-full flex flex-col">
       {/* Image Background */}
       <div className="h-48 relative overflow-hidden bg-gray-200">
         {channel.image ? (
@@ -85,14 +85,16 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
       </div>
 
       {/* Content */}
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200">
-          {channel.name}
-        </h3>
-        <p className="text-gray-600 mb-6 text-sm text-center">
-          {channel.description}
-        </p>
-        <div className="flex justify-center">
+      <div className="p-6 flex flex-col flex-1 justify-between">
+        <div>
+          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200 text-center">
+            {channel.name}
+          </h3>
+          <p className="text-gray-600 mb-6 text-sm text-center">
+            {channel.description}
+          </p>
+        </div>
+        <div className="flex justify-center mt-auto">
           <button 
             onClick={handleJoinClick}
             className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
