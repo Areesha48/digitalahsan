@@ -1,4 +1,3 @@
-
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -22,7 +21,7 @@ const Index = () => {
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💻",
       image: "/lovable-uploads/82303465-daf7-45f8-bbe4-860489700552.png",
-      link: "https://www.whatsapp.com/channel/0029VasKqNm3LdQQie4R6X1L"
+      link: "https://whatsapp.com/channel/0029Vb8lTUG2975GcvzFNd47"
     },
     {
       id: 3,
@@ -43,24 +42,6 @@ const Index = () => {
       icon: "🕯️",
       image: "/lovable-uploads/0107b260-2912-44ad-99d2-7715a67ceec5.png"
     }
-    // {
-    //   id: 5,
-    //   name: "Entertainment Hub",
-    //   description: "Movies, music and entertainment content",
-    //   memberCount: "4.1K",
-    //   bgGradient: "from-pink-400 to-pink-600",
-    //   icon: "🎬",
-    //   image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
-    // },
-    // {
-    //   id: 6,
-    //   name: "Study Material",
-    //   description: "Educational resources and study guides",
-    //   memberCount: "2.9K",
-    //   bgGradient: "from-orange-400 to-orange-600",
-    //   icon: "📚",
-    //   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop"
-    // }
   ];
 
   const socialChannels = [
@@ -82,7 +63,8 @@ const Index = () => {
       bgGradient: "from-blue-500 to-cyan-500",
       icon: "✈️",
       platform: "telegram",
-      image: "/lovable-uploads/85040803-74c4-4227-acde-a6179f8f722c.png"
+      image: "/lovable-uploads/85040803-74c4-4227-acde-a6179f8f722c.png",
+      link: "https://t.me/+Ap1B_9uIxDY4YWZk"
     }
   ];
 
