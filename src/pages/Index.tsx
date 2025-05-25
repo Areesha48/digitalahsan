@@ -87,7 +87,7 @@ const Index = () => {
           {whatsappChannels.map((channel, index) => (
             <div
               key={channel.id}
-              className="animate-fade-in"
+              className="animate-fade-in h-full" // h-full for equal height
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <ChannelCard channel={channel} platform="whatsapp" />
@@ -111,7 +111,7 @@ const Index = () => {
           {socialChannels.map((channel, index) => (
             <div
               key={channel.id}
-              className="animate-fade-in"
+              className="animate-fade-in h-full"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <ChannelCard channel={channel} platform={channel.platform} />
