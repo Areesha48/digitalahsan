@@ -1,3 +1,4 @@
+
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -99,8 +100,9 @@ const Index = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {whatsappChannels.map((channel, index) => (
+        {/* First row - 3 cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+          {whatsappChannels.slice(0, 3).map((channel, index) => (
             <div 
               key={channel.id}
               className="animate-fade-in"
@@ -110,6 +112,18 @@ const Index = () => {
             </div>
           ))}
         </div>
+        
+        {/* Second row - 1 card centered */}
+        {whatsappChannels.length > 3 && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 max-w-md mx-auto">
+            <div 
+              className="animate-fade-in"
+              style={{ animationDelay: `300ms` }}
+            >
+              <ChannelCard channel={whatsappChannels[3]} platform="whatsapp" />
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Social Media Section */}
