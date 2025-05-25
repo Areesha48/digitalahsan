@@ -67,12 +67,8 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
             alt={channel.name}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             onError={(e) => {
-              console.log('Image failed to load:', channel.image);
               e.currentTarget.style.display = 'none';
               e.currentTarget.parentElement!.style.background = `linear-gradient(to right, ${channel.bgGradient.replace('from-', '').replace('to-', '').split(' ').join(', ')})`;
-            }}
-            onLoad={() => {
-              console.log('Image loaded successfully:', channel.image);
             }}
           />
         ) : (
@@ -93,10 +89,10 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200">
           {channel.name}
         </h3>
-        <p className="text-gray-600 mb-4 text-sm">
+        <p className="text-gray-600 mb-6 text-sm text-center">
           {channel.description}
         </p>
-        <div className="flex items-center justify-end">
+        <div className="flex justify-center">
           <button 
             onClick={handleJoinClick}
             className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
