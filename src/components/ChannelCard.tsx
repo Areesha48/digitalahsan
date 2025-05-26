@@ -1,3 +1,4 @@
+
 import { Instagram, MessageCircle } from "lucide-react";
 
 interface Channel {
@@ -58,7 +59,7 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
   };
 
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden h-full flex flex-col">
+    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden h-[400px] flex flex-col">
       {/* Image Background */}
       <div className="h-48 relative overflow-hidden bg-gray-200">
         {channel.image ? (
