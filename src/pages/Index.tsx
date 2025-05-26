@@ -1,3 +1,4 @@
+
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -82,8 +83,8 @@ const Index = () => {
           </p>
         </div>
 
-        {/* 2x2 Grid for WhatsApp Channels */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto justify-center">
+        {/* Changed from 2x2 grid to horizontal layout like social channels */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {whatsappChannels.map((channel, index) => (
             <div
               key={channel.id}
