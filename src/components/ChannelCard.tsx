@@ -5,7 +5,7 @@ interface Channel {
   id: number | string;
   name: string;
   description: string;
-  memberCount: string;
+  memberCount?: string;
   bgGradient: string;
   icon: string;
   platform?: string;
