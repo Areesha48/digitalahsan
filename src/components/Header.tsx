@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="w-full flex items-center justify-between py-4 px-6 bg-white shadow-md">
       {/* Logo ya brand name */}
@@ -9,11 +9,18 @@ const Header = () => {
           digital ahsan
         </span>
       </div>
+
       {/* Navigation */}
       <nav className="flex items-center gap-6">
-        <a href="/" className="text-black hover:text-blue-600 font-medium transition">Home</a>
-        <a href="/about" className="text-black hover:text-blue-600 font-medium transition">About</a>
-        <a href="/contact" className="text-black hover:text-blue-600 font-medium transition">Contact</a>
+        <a href="/" className="!text-black hover:!text-black font-medium transition">
+          Home
+        </a>
+        <a href="/about" className="!text-black hover:!text-black font-medium transition">
+          About
+        </a>
+        <a href="/contact" className="!text-black hover:!text-black font-medium transition">
+          Contact
+        </a>
       </nav>
     </header>
   );
