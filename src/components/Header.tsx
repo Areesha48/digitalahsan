@@ -10,11 +10,14 @@ export const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">C</span>
+              <span className="text-white font-bold text-xl">D</span>
             </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-              Channel Hub
-            </h1>
+            <div className="flex flex-col">
+              <h1 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                Digital Ahsan
+              </h1>
+              <span className="text-sm text-gray-600">Channel Hub</span>
+            </div>
           </div>
           
           <nav className="hidden md:flex space-x-8">
