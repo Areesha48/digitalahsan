@@ -71,15 +71,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-8">
-      {/* Hero Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-4">
+      {/* Top-left Digital Ahsan heading */}
+      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-8">
+        <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-8">
           Digital Ahsan
         </h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Join our exclusive channels for the latest updates, insights, and premium content
-        </p>
-      </section>
+      </div>
 
       {/* WhatsApp Channels Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
