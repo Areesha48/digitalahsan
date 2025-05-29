@@ -91,11 +91,11 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
           <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200 text-center">
             {channel.name}
           </h3>
-          <p className="text-gray-600 mb-6 text-sm text-center">
+          <p className="text-gray-600 mb-3 text-sm text-center">
             {channel.description}
           </p>
         </div>
-        <div className="flex justify-center mt-auto">
+        <div className="flex justify-center mt-2">
           <button 
             onClick={handleJoinClick}
             className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
