@@ -5,10 +5,7 @@ const Header: React.FC = () => {
     <header className="w-full flex items-center justify-between py-4 px-6 bg-white shadow-md">
       {/* Logo ya brand name */}
       <div className="flex items-center">
-        <span
-          className="text-3xl font-extrabold tracking-wider"
-          style={{ color: "black" }}
-        >
+        <span className="text-3xl font-extrabold tracking-wider text-black">
           digital ahsan
         </span>
       </div>
