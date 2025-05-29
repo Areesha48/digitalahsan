@@ -80,11 +80,11 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
           <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200 text-center">
             {channel.name}
           </h3>
-          <p className="text-gray-600 mb-1 text-sm text-center">
+          <p className="text-gray-600 mb-3 text-sm text-center">
             {channel.description}
           </p>
         </div>
-        <div className="flex justify-center mt-1">
+        <div className="flex justify-center mt-2">
           <a
             href={channel.link}
             target="_blank"
