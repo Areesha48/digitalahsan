@@ -5,7 +5,7 @@ const Header = () => {
     <header className="w-full flex items-center justify-between py-4 px-6 bg-white shadow-md">
       {/* Logo ya brand name */}
       <div className="flex items-center">
-        <span className="text-3xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent drop-shadow-md tracking-wider">
+        <span className="text-3xl font-extrabold text-black tracking-wider">
           digital ahsan
         </span>
       </div>
@@ -20,4 +20,3 @@ const Header = () => {
 };
 
 export default Header;
-
