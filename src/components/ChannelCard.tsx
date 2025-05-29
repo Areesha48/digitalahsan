@@ -1,3 +1,4 @@
+
 import { Instagram, MessageCircle } from "lucide-react";
 
 interface Channel {
@@ -47,19 +48,29 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
       case 'telegram':
         return 'Join';
       default:
-        return 'Join';
+        return 'Join Channel';
+    }
+  };
+
+  const handleJoinClick = () => {
+    if (channel.link) {
+      window.open(channel.link, '_blank');
     }
   };
 
   return (
-    <div className="relative rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden flex flex-col h-full">
-      {/* Background and Overlay */}
-      <div className="relative h-32">
+    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden h-[400px] flex flex-col">
+      {/* Image Background */}
+      <div className="h-48 relative overflow-hidden bg-gray-200">
         {channel.image ? (
-          <img
-            src={channel.image}
+          <img 
+            src={channel.image} 
             alt={channel.name}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              e.currentTarget.parentElement!.style.background = `linear-gradient(to right, ${channel.bgGradient.replace('from-', '').replace('to-', '').split(' ').join(', ')})`;
+            }}
           />
         ) : (
           <div className={`h-full bg-gradient-to-r ${platform === 'instagram' ? getPlatformColor() : channel.bgGradient}`}></div>
@@ -85,16 +96,17 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
           </p>
         </div>
         <div className="flex justify-center mt-2">
-          <a
-            href={channel.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-5 py-2 rounded-md font-medium text-white bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 transition"
+          <button 
+            onClick={handleJoinClick}
+            className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
           >
             {getJoinText()}
-          </a>
+          </button>
         </div>
       </div>
+
+      {/* Hover Effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
     </div>
   );
 };
