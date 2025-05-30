@@ -1,4 +1,3 @@
-
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -71,10 +70,10 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-8">
-      {/* Top-left Digital Ahsan heading */}
+      {/* Top-left Learn with Ahsan heading */}
       <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-8">
-        <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-8">
-          Digital Ahsan
+        <h1 className="text-3xl md:text-4xl font-bold text-black mb-8">
+          Learn with Ahsan
         </h1>
       </div>
 
