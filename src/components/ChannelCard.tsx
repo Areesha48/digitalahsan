@@ -1,10 +1,11 @@
-import { Instagram, MessageCircle, CircleDot } from "lucide-react";
+
+import { Instagram, MessageCircle } from "lucide-react";
 
 interface Channel {
   id: number | string;
   name: string;
   description: string;
-  memberCount?: string;
+  memberCount: string;
   bgGradient: string;
   icon: string;
   platform?: string;
@@ -58,7 +59,7 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
   };
 
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden h-[400px] flex flex-col">
+    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden">
       {/* Image Background */}
       <div className="h-48 relative overflow-hidden bg-gray-200">
         {channel.image ? (
@@ -67,8 +68,12 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
             alt={channel.name}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             onError={(e) => {
+              console.log('Image failed to load:', channel.image);
               e.currentTarget.style.display = 'none';
               e.currentTarget.parentElement!.style.background = `linear-gradient(to right, ${channel.bgGradient.replace('from-', '').replace('to-', '').split(' ').join(', ')})`;
+            }}
+            onLoad={() => {
+              console.log('Image loaded successfully:', channel.image);
             }}
           />
         ) : (
@@ -85,26 +90,24 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
       </div>
 
       {/* Content */}
-      <div className="p-6 flex flex-col flex-1 justify-between">
-        <div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200 text-center">
-            {channel.name}
-          </h3>
-          <p className="text-gray-600 mb-3 text-sm text-center">
-            {channel.description}
-          </p>
-          {channel.memberCount && (
-            <p className="text-gray-500 text-xs text-center mb-3">
-              {channel.memberCount} members
-            </p>
-          )}
-        </div>
-        <div className="flex justify-center mt-2">
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200">
+          {channel.name}
+        </h3>
+        <p className="text-gray-600 mb-4 text-sm">
+          {channel.description}
+        </p>
+        
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+            <span className="text-sm text-gray-500">{channel.memberCount} members</span>
+          </div>
+          
           <button 
             onClick={handleJoinClick}
-            className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center gap-2`}
+            className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
           >
-            <CircleDot className="w-4 h-4 text-green-400" />
             {getJoinText()}
           </button>
         </div>
