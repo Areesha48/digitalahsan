@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">C</span>
+                <span className="text-white font-bold text-xl">D</span>
               </div>
               <h3 className="text-2xl font-bold">Digital Ahsan</h3>
             </div>
