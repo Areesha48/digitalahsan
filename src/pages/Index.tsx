@@ -7,7 +7,7 @@ const Index = () => {
       id: 1,
       name: "Digital Ahsan",
       description: "Grow like a villain - Digital marketing tips and strategies",
-      memberCount: "7.9K",
+      memberCount: "10K",
       bgGradient: "from-green-400 to-green-600",
       icon: "📱",
       image: "/lovable-uploads/c3091ba1-107a-4f0a-9769-0a308e25ed54.png",
@@ -17,7 +17,7 @@ const Index = () => {
       id: 2,
       name: "Tech Ahsan",
       description: "Latest technology updates and tech reviews",
-      memberCount: "1K",
+      memberCount: "3K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💻",
       image: "/lovable-uploads/82303465-daf7-45f8-bbe4-860489700552.png",
@@ -32,33 +32,33 @@ const Index = () => {
       icon: "💪",
       image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png"
     },
-    {
-      id: 4,
-      name: "Spiritual vibes",
-      description: "Spiritual content and peaceful vibes",
-      memberCount: "3.2K",
-      bgGradient: "from-purple-400 to-purple-600",
-      icon: "🕯️",
-      image: "/lovable-uploads/0107b260-2912-44ad-99d2-7715a67ceec5.png"
-    },
-    {
-      id: 5,
-      name: "Entertainment Hub",
-      description: "Movies, music and entertainment content",
-      memberCount: "4.1K",
-      bgGradient: "from-pink-400 to-pink-600",
-      icon: "🎬",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
-    },
-    {
-      id: 6,
-      name: "Study Material",
-      description: "Educational resources and study guides",
-      memberCount: "2.9K",
-      bgGradient: "from-orange-400 to-orange-600",
-      icon: "📚",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop"
-    }
+    // {
+    //   id: 4,
+    //   name: "Spiritual vibes",
+    //   description: "Spiritual content and peaceful vibes",
+    //   memberCount: "3.2K",
+    //   bgGradient: "from-purple-400 to-purple-600",
+    //   icon: "🕯️",
+    //   image: "/lovable-uploads/0107b260-2912-44ad-99d2-7715a67ceec5.png"
+    // },
+    // {
+    //   id: 5,
+    //   name: "Entertainment Hub",
+    //   description: "Movies, music and entertainment content",
+    //   memberCount: "4.1K",
+    //   bgGradient: "from-pink-400 to-pink-600",
+    //   icon: "🎬",
+    //   image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
+    // },
+    // {
+    //   id: 6,
+    //   name: "Study Material",
+    //   description: "Educational resources and study guides",
+    //   memberCount: "2.9K",
+    //   bgGradient: "from-orange-400 to-orange-600",
+    //   icon: "📚",
+    //   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop"
+    // }
   ];
 
   const socialChannels = [
