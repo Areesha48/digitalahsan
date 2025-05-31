@@ -1,5 +1,4 @@
-
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram, MessageCircle, CircleDot } from "lucide-react";
 
 interface Channel {
   id: number | string;
@@ -103,8 +102,9 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
         <div className="flex justify-center mt-2">
           <button 
             onClick={handleJoinClick}
-            className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
+            className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center gap-2`}
           >
+            <CircleDot className="w-4 h-4 text-green-400" />
             {getJoinText()}
           </button>
         </div>
