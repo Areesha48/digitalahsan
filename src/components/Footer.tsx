@@ -1,13 +1,13 @@
 import React from "react";
-import { Instagram, MessageCircle, Heart } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xl">C</span>
@@ -30,28 +30,6 @@ export const Footer: React.FC = () => {
               </button>
             </div>
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Channels</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Support</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Help Center</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">FAQ</a></li>
-            </ul>
-          </div>
         </div>
 
         {/* Bottom Bar */}
@@ -59,13 +37,9 @@ export const Footer: React.FC = () => {
           <p className="text-gray-400 text-sm">
             © 2025 Digital Ahsan. All rights reserved.
           </p>
-          <div className="flex items-center space-x-1 text-gray-400 text-sm mt-4 md:mt-0">
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-red-500 animate-pulse" />
-            <span>for our community</span>
-          </div>
         </div>
       </div>
     </footer>
   );
 };
+
