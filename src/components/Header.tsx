@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 export const Header = () => {
@@ -11,8 +12,8 @@ export const Header = () => {
             <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-xl">C</span>
             </div>
-            <h1 className="text-2xl font-bold text-black">
-              digital ahsan
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+              Channel Hub
             </h1>
           </div>
           
@@ -64,4 +65,3 @@ export const Header = () => {
       </div>
     </header>
   );
-};
