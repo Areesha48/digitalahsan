@@ -66,7 +66,7 @@ const Index = () => {
       id: 'instagram',
       name: "Instagram Page",
       description: "Follow us for visual content and stories",
-      memberCount: "5.2K",
+      memberCount: "1.2K",
       bgGradient: "from-gradient-start to-gradient-end",
       icon: "📸",
       platform: "instagram",
@@ -76,7 +76,7 @@ const Index = () => {
       id: 'telegram',
       name: "Telegram Channel",
       description: "Get instant updates and announcements",
-      memberCount: "3.8K",
+      memberCount: "5K",
       bgGradient: "from-blue-500 to-cyan-500",
       icon: "✈️",
       platform: "telegram",
@@ -86,7 +86,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-8">
-      
+        {/* Top-left Digital Ahsan heading */}
+       <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-8">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-black mb-8 cursor-pointer transition-colors duration-300 hover:text-green-600 tracking-wide">Add commentMore actions
+          Learn with Ahsan
+          Digital Ahsan
+        </h1>
+      </div>
       {/* WhatsApp Channels Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
