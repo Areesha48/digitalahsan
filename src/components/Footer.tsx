@@ -12,7 +12,7 @@ export const Footer = () => {
               <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xl">C</span>
               </div>
-              <h3 className="text-2xl font-bold">Channel Hub</h3>
+              <h3 className="text-2xl font-bold">Digital Ahsan</h3>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
               Your one-stop destination for amazing content across multiple platforms. 
@@ -32,7 +32,7 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+{/*           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Home</a></li>
@@ -40,10 +40,10 @@ export const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Support */}
-          <div>
+{/*           <div>
             <h4 className="text-lg font-semibold mb-4">Support</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Help Center</a></li>
@@ -53,17 +53,17 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-
+ */}
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Channel Hub. All rights reserved.
+            © 2025 Digital Ahsan. All rights reserved.
           </p>
-          <div className="flex items-center space-x-1 text-gray-400 text-sm mt-4 md:mt-0">
+{/*           <div className="flex items-center space-x-1 text-gray-400 text-sm mt-4 md:mt-0">
             <span>Made with</span>
             <Heart className="w-4 h-4 text-red-500 animate-pulse" />
             <span>for our community</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
