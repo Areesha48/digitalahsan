@@ -94,6 +94,11 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
           <p className="text-gray-600 mb-3 text-sm text-center">
             {channel.description}
           </p>
+          {channel.memberCount && (
+            <p className="text-gray-500 text-xs text-center mb-3">
+              {channel.memberCount} members
+            </p>
+          )}
         </div>
         <div className="flex justify-center mt-2">
           <button 

@@ -1,3 +1,4 @@
+
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -7,7 +8,7 @@ const Index = () => {
       id: 1,
       name: "Digital Ahsan",
       description: "Grow like a villain - Digital marketing tips and strategies",
-      // memberCount: "7.9K",
+      memberCount: "10K",
       bgGradient: "from-green-400 to-green-600",
       icon: "📱",
       image: "/lovable-uploads/c3091ba1-107a-4f0a-9769-0a308e25ed54.png",
@@ -17,7 +18,7 @@ const Index = () => {
       id: 2,
       name: "Tech Ahsan",
       description: "Latest technology updates and tech reviews",
-      // memberCount: "1K",
+      memberCount: "2K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💻",
       image: "/lovable-uploads/82303465-daf7-45f8-bbe4-860489700552.png",
@@ -27,7 +28,7 @@ const Index = () => {
       id: 3,
       name: "YEET",
       description: "Focus your dream - Make yourself Proud!",
-      // memberCount: "1.8K",
+      memberCount: "1K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💪",
       image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png",
@@ -37,7 +38,7 @@ const Index = () => {
       id: 4,
       name: "Spiritual vibes",
       description: "Spiritual content and peaceful vibes",
-      // memberCount: "3.2K",
+      memberCount: "1K",
       bgGradient: "from-purple-400 to-purple-600",
       icon: "🕯️",
       image: "/lovable-uploads/0107b260-2912-44ad-99d2-7715a67ceec5.png"
@@ -49,7 +50,7 @@ const Index = () => {
       id: 'instagram',
       name: "Instagram Page",
       description: "Follow us for visual content and stories",
-      // memberCount: "5.2K",
+      memberCount: "1K",
       bgGradient: "from-gradient-start to-gradient-end",
       icon: "📸",
       platform: "instagram",
@@ -59,7 +60,7 @@ const Index = () => {
       id: 'telegram',
       name: "Telegram Channel",
       description: "Get instant updates and announcements",
-      // memberCount: "3.8K",
+      memberCount: "5K",
       bgGradient: "from-blue-500 to-cyan-500",
       icon: "✈️",
       platform: "telegram",
