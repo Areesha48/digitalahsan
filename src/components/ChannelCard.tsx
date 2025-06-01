@@ -59,9 +59,9 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
   };
 
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden h-80 flex flex-col">
+    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden">
       {/* Image Background */}
-      <div className="h-48 relative overflow-hidden bg-gray-200 flex-shrink-0">
+      <div className="h-48 relative overflow-hidden bg-gray-200">
         {channel.image ? (
           <img 
             src={channel.image} 
@@ -90,15 +90,13 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
       </div>
 
       {/* Content */}
-      <div className="p-6 flex-1 flex flex-col justify-between">
-        <div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200">
-            {channel.name}
-          </h3>
-          <p className="text-gray-600 mb-4 text-sm">
-            {channel.description}
-          </p>
-        </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200">
+          {channel.name}
+        </h3>
+        <p className="text-gray-600 mb-4 text-sm">
+          {channel.description}
+        </p>
         
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
