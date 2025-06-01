@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Instagram, MessageCircle } from "lucide-react";
 
@@ -42,4 +43,3 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
-
