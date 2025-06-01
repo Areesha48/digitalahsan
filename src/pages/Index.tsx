@@ -32,33 +32,7 @@ const Index = () => {
       icon: "💪",
       image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png"
     },
-    // {
-    //   id: 4,
-    //   name: "Spiritual vibes",
-    //   description: "Spiritual content and peaceful vibes",
-    //   memberCount: "3.2K",
-    //   bgGradient: "from-purple-400 to-purple-600",
-    //   icon: "🕯️",
-    //   image: "/lovable-uploads/0107b260-2912-44ad-99d2-7715a67ceec5.png"
-    // },
-    // {
-    //   id: 5,
-    //   name: "Entertainment Hub",
-    //   description: "Movies, music and entertainment content",
-    //   memberCount: "4.1K",
-    //   bgGradient: "from-pink-400 to-pink-600",
-    //   icon: "🎬",
-    //   image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
-    // },
-    // {
-    //   id: 6,
-    //   name: "Study Material",
-    //   description: "Educational resources and study guides",
-    //   memberCount: "2.9K",
-    //   bgGradient: "from-orange-400 to-orange-600",
-    //   icon: "📚",
-    //   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop"
-    // }
+    // ...baqi channels (agar ho) waise hi chhodein
   ];
 
   const socialChannels = [
@@ -78,7 +52,7 @@ const Index = () => {
       description: "Get instant updates and announcements",
       memberCount: "5K",
       bgGradient: "from-blue-500 to-cyan-500",
-      icon: "✈️",
+      icon: "✈",
       platform: "telegram",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
     }
@@ -86,10 +60,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-8">
-        {/* Top-left Digital Ahsan heading */}
-       <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-8">
+      {/* Top-left Digital Ahsan heading */}
+      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-8">
         <h1 className="text-3xl md:text-4xl font-extrabold text-black mb-8 cursor-pointer transition-colors duration-300 hover:text-green-600 tracking-wide">
-{/*           Learn with Ahsan */}
           Digital Ahsan
         </h1>
       </div>
@@ -103,20 +76,20 @@ const Index = () => {
             Join our exclusive WhatsApp channels for latest updates and content
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* == UPDATED: grid mein items-stretch add kiya hai == */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {whatsappChannels.map((channel, index) => (
-            <div 
+            /* == UPDATED: wrapper div mein h-full add kiya hai == */
+            <div
               key={channel.id}
-              className="animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="animate-fade-in h-full"
+              style={{ animationDelay: ${index * 100}ms }}
             >
               <ChannelCard channel={channel} platform="whatsapp" />
             </div>
           ))}
         </div>
       </section>
-
       {/* Social Media Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -127,20 +100,19 @@ const Index = () => {
             Stay connected with us on social media platforms
           </p>
         </div>
-        
+        {/* Social grid bhi same tarah h-full wrapper ke sath */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {socialChannels.map((channel, index) => (
-            <div 
+            <div
               key={channel.id}
-              className="animate-fade-in"
-              style={{ animationDelay: `${index * 200}ms` }}
+              className="animate-fade-in h-full"
+              style={{ animationDelay: ${index * 200}ms }}
             >
               <ChannelCard channel={channel} platform={channel.platform} />
             </div>
           ))}
         </div>
       </section>
-
       <Footer />
     </div>
   );
