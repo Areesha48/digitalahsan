@@ -1,4 +1,3 @@
-
 import { Instagram, MessageCircle } from "lucide-react";
 
 interface Channel {
@@ -59,25 +58,26 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
   };
 
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+    // == UPDATED: h-full aur flex flex-col add kiya gaya hai ==
+    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden h-full flex flex-col">
       {/* Image Background */}
       <div className="h-48 relative overflow-hidden bg-gray-200">
         {channel.image ? (
-          <img 
-            src={channel.image} 
+          <img
+            src={channel.image}
             alt={channel.name}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             onError={(e) => {
               console.log('Image failed to load:', channel.image);
               e.currentTarget.style.display = 'none';
-              e.currentTarget.parentElement!.style.background = `linear-gradient(to right, ${channel.bgGradient.replace('from-', '').replace('to-', '').split(' ').join(', ')})`;
+              e.currentTarget.parentElement!.style.background = linear-gradient(to right, ${channel.bgGradient.replace('from-', '').replace('to-', '').split(' ').join(', ')});
             }}
             onLoad={() => {
               console.log('Image loaded successfully:', channel.image);
             }}
           />
         ) : (
-          <div className={`h-full bg-gradient-to-r ${platform === 'instagram' ? getPlatformColor() : channel.bgGradient}`}></div>
+          <div className={h-full bg-gradient-to-r ${platform === 'instagram' ? getPlatformColor() : channel.bgGradient}}></div>
         )}
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute top-4 left-4 flex items-center space-x-2">
@@ -88,33 +88,29 @@ export const ChannelCard = ({ channel, platform }: ChannelCardProps) => {
           {channel.icon}
         </div>
       </div>
-
-      {/* Content */}
-      <div className="p-6">
+      {/* == UPDATED: Content div mein flex-1 flex flex-col justify-between add kiya gaya hai == */}
+      <div className="p-6 flex-1 flex flex-col justify-between">
         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-200">
           {channel.name}
         </h3>
         <p className="text-gray-600 mb-4 text-sm">
           {channel.description}
         </p>
-        
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mt-auto">
           <div className="flex items-center space-x-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             <span className="text-sm text-gray-500">{channel.memberCount} members</span>
           </div>
-          
-          <button 
+          <button
             onClick={handleJoinClick}
-            className={`bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
+            className={bg-gradient-to-r ${getPlatformColor()} text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200}
           >
             {getJoinText()}
           </button>
         </div>
       </div>
-
-      {/* Hover Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+      {/* Hover Effect (same as before) */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-500 pointer-events-none"></div>
     </div>
   );
 };
