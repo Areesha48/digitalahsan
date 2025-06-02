@@ -7,7 +7,7 @@ const Index = () => {
     {
       id: 1,
       name: "Digital Ahsan",
-      description: "Grow like a villain - Digital marketing tips and strategies",
+      description: "Master digital marketing strategies, grow your business online, and learn proven techniques for success",
       memberCount: "10K",
       bgGradient: "from-green-400 to-green-600",
       icon: "📱",
@@ -17,7 +17,7 @@ const Index = () => {
     {
       id: 2,
       name: "Tech Ahsan",
-      description: "Latest technology updates and tech reviews",
+      description: "Latest technology updates, gadget reviews, and tech insights to keep you ahead in the digital world",
       memberCount: "3K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💻",
@@ -27,7 +27,7 @@ const Index = () => {
     {
       id: 3,
       name: "YEET",
-      description: "Focus your dream - Make yourself Proud!",
+      description: "Motivational content, success stories, and inspiration to help you achieve your dreams and goals",
       memberCount: "1.8K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💪",
