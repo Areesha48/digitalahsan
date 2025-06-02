@@ -22,7 +22,7 @@ const Index = () => {
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💻",
       image: "/lovable-uploads/82303465-daf7-45f8-bbe4-860489700552.png",
-      link: "https://www.whatsapp.com/channel/0029VasKqNm3LdQQie4R6X1L"
+      link: "https://whatsapp.com/channel/0029Vb8lTUG2975GcvzFNd47"
     },
     {
       id: 3,
@@ -31,7 +31,9 @@ const Index = () => {
       memberCount: "1.8K",
       bgGradient: "from-blue-400 to-blue-600",
       icon: "💪",
-      image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png"
+      image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png",
+      link: "https://www.whatsapp.com/channel/0029Vb8p4E2B4hdaN5aPCs2B"
+    
     },
   ];
 
@@ -44,7 +46,8 @@ const Index = () => {
       bgGradient: "from-gradient-start to-gradient-end",
       icon: "📸",
       platform: "instagram",
-      image: "/lovable-uploads/3f9990c8-293a-40ce-ae5e-d65bce649135.png"
+      image: "/lovable-uploads/3f9990c8-293a-40ce-ae5e-d65bce649135.png",
+      link: "https://www.instagram.com/ahsan_dga?igsh=MTM4aTA1MHcxcThiZQ%3D%3D"
     },
     {
       id: 'telegram',
@@ -54,7 +57,8 @@ const Index = () => {
       bgGradient: "from-blue-500 to-cyan-500",
       icon: "✈",
       platform: "telegram",
-      image: "/lovable-uploads/0b3e9754-f514-4da7-bc10-b7046318d6c0.png"
+      image: "/lovable-uploads/0b3e9754-f514-4da7-bc10-b7046318d6c0.png",
+      link: "https://t.me/+Ap1B_9uIxDY4YWZk"
     }
   ];
 

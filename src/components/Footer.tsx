@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram, MessageCircle, Send } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
@@ -19,16 +18,38 @@ export const Footer: React.FC = () => {
               Your one-stop destination for amazing content across multiple platforms.
               Join our growing community and stay updated with the latest trends.
             </p>
+
+            {/* Social Icons with Links */}
             <div className="flex space-x-4">
-              <button className="w-10 h-10 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/ahsan_dga?igsh=MTM4aTA1MHcxcThiZQ%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200"
+              >
                 <Instagram className="w-5 h-5" />
-              </button>
-              <button className="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
+              </a>
+
+              {/* WhatsApp Channel */}
+              <a
+                href="https://www.whatsapp.com/channel/0029VaderbPEAKWB4EtCKK2G"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200"
+              >
                 <MessageCircle className="w-5 h-5" />
-              </button>
-              <button className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200">
-                <MessageCircle className="w-5 h-5" />
-              </button>
+              </a>
+
+              {/* Telegram */}
+              <a
+                href="https://t.me/+Ap1B_9uIxDY4YWZk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200"
+              >
+                <Send className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
