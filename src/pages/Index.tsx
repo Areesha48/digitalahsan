@@ -1,3 +1,4 @@
+
 import { ChannelCard } from "@/components/ChannelCard";
 import { Footer } from "@/components/Footer";
 
@@ -32,7 +33,6 @@ const Index = () => {
       icon: "💪",
       image: "/lovable-uploads/0127fb1f-d77c-456e-b5ba-c581a5945e96.png"
     },
-    // ...baqi channels (agar ho) waise hi chhodein
   ];
 
   const socialChannels = [
@@ -44,7 +44,7 @@ const Index = () => {
       bgGradient: "from-gradient-start to-gradient-end",
       icon: "📸",
       platform: "instagram",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop"
+      image: "/lovable-uploads/3f9990c8-293a-40ce-ae5e-d65bce649135.png"
     },
     {
       id: 'telegram',
@@ -54,7 +54,7 @@ const Index = () => {
       bgGradient: "from-blue-500 to-cyan-500",
       icon: "✈",
       platform: "telegram",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
+      image: "/lovable-uploads/0b3e9754-f514-4da7-bc10-b7046318d6c0.png"
     }
   ];
 
@@ -76,14 +76,12 @@ const Index = () => {
             Join our exclusive WhatsApp channels for latest updates and content
           </p>
         </div>
-        {/* == UPDATED: grid mein items-stretch add kiya hai == */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {whatsappChannels.map((channel, index) => (
-            /* == UPDATED: wrapper div mein h-full add kiya hai == */
             <div
               key={channel.id}
               className="animate-fade-in h-full"
-              style={{ animationDelay: ${index * 100}ms }}
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <ChannelCard channel={channel} platform="whatsapp" />
             </div>
@@ -100,13 +98,12 @@ const Index = () => {
             Stay connected with us on social media platforms
           </p>
         </div>
-        {/* Social grid bhi same tarah h-full wrapper ke sath */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {socialChannels.map((channel, index) => (
             <div
               key={channel.id}
               className="animate-fade-in h-full"
-              style={{ animationDelay: ${index * 200}ms }}
+              style={{ animationDelay: `${index * 200}ms` }}
             >
               <ChannelCard channel={channel} platform={channel.platform} />
             </div>
