@@ -41,7 +41,7 @@ const Index = () => {
       description: "Funny, relatable, and trending stickers to spice up your chats — join now and get your daily dose of fun!",
       memberCount: "1K",
       bgGradient: "from-blue-400 to-blue-600",
-      con: "😂",
+      icon: "😂",
       image: "/lovable-uploads/funnychnn.jpg",
       link: "https://whatsapp.com/channel/0029VbAzsmWAe5VpxbsFey2T"
     
