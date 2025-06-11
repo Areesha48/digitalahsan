@@ -35,6 +35,17 @@ const Index = () => {
       link: "https://www.whatsapp.com/channel/0029Vb8p4E2B4hdaN5aPCs2B"
     
     },
+     {
+      id: 4,
+      name: "Ahsan Kai Stickers ( ͡• ͜ʖ ͡• )ノ",
+      description: "Funny, relatable, and trending stickers to spice up your chats — join now and get your daily dose of fun!",
+      memberCount: "1K",
+      bgGradient: "from-blue-400 to-blue-600",
+      icon: "💪",
+      image: "/lovable-upload/funnychnn.jpg",
+      link: "https://whatsapp.com/channel/0029VbAzsmWAe5VpxbsFey2T"
+    
+    },
   ];
 
   const socialChannels = [
