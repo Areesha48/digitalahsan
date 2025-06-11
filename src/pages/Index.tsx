@@ -42,7 +42,7 @@ const Index = () => {
       memberCount: "1K",
       bgGradient: "from-blue-400 to-blue-600",
       con: "😂",
-      image: "/lovable-upload/funnychnn.jpg",
+      image: "/lovable-uploads/funnychnn.jpg",
       link: "https://whatsapp.com/channel/0029VbAzsmWAe5VpxbsFey2T"
     
     },
